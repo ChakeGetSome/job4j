@@ -6,7 +6,7 @@ package ru.job4j.calculate;
 public class Calculate {
 	/**
 	* Main
-	* @return Hello World
+	* @param arg
 	*/
  public static void main(String[] args) {
   System.out.println("Hello World");
