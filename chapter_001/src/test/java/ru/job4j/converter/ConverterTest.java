@@ -24,6 +24,7 @@ public class ConverterTest {
         int result = converter.dollarToRuble(1);
         assertThat(result, is(60));
     }
+
     @Test
     public void when1EuroToRubleThen70() {
         Converter converter = new Converter();
