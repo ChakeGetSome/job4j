@@ -22,7 +22,6 @@ public class Paint {
         return screen.toString();
     }
 
-
     public String leftTrl(int height) {
         StringBuilder screen = new StringBuilder();
         int width = height;
@@ -54,5 +53,4 @@ public class Paint {
         }
         return screen.toString();
     }
-
 }

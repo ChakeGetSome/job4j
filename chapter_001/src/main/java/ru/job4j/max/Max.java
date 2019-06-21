@@ -1,5 +1,4 @@
 package ru.job4j.max;
-
 /**
  * @version $Id$
  * @since 0.1
@@ -11,8 +10,6 @@ public class Max {
      * @return большее число.
      */
     public int max(int first, int second){
-
-
         return first > second ? first : second ;
     }
     public int max(int first, int second, int third) {

@@ -1,7 +1,6 @@
 package ru.job4j.paint;
 
 import java.util.function.BiPredicate;
-
 /**
  * @author Vasiliy Koreshkov
  * @version $Id$

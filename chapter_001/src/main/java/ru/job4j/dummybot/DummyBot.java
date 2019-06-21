@@ -1,5 +1,4 @@
 package ru.job4j.dummybot;
-
 /**
  * @version $Id$
  * @since 0.1
