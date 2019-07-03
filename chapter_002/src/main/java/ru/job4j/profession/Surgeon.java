@@ -15,8 +15,4 @@ class Surgeon extends Doctor {
     public boolean operate() {
         return decision;
     }
-
-    public Diagnose heal(Pacient pacient) {
-        return Diagnose;
-    }
 }

@@ -15,7 +15,4 @@ class Programmer extends Engineer {
     public String getTask() {
         return task;
     }
-    public void programming(Program program) {
-        return program;
-    }
 }

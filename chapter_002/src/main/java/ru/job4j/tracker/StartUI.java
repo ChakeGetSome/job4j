@@ -80,8 +80,8 @@ public class StartUI {
         Item[] items = this.tracker.findAll();
         for (Item item : items) {
             System.out.print("Name: " + item.getName());
-            System.out.print("  Description: " + item.getDesc());
-            System.out.println("  Create Time: " + item.getTime());
+            System.out.print("  Description : " + item.getDesc());
+            System.out.println("  Create Time : " + item.getTime());
         }
     }
 
@@ -113,16 +113,16 @@ public class StartUI {
 
     private void findItemById() {
         System.out.println("------------ Поиск заявки по id --------------");
-        String id = this.input.ask("Введите id заявки: ");
-        Item item = this.tracker.findById(id);
+    String id = this.input.ask("Введите id заявки: ");
+    Item item = this.tracker.findById(id);
         if (item != null) {
-            System.out.print("Name: " + item.getName());
-            System.out.print("  Description: " + item.getDesc());
-            System.out.println("  Create Time: " + item.getTime());
-        } else {
-            System.out.println("Заявка не найдена. Проверьте id.");
-        }
+        System.out.print("Name: " + item.getName());
+        System.out.print("  Description : " + item.getDesc());
+        System.out.println("  Create Time : " + item.getTime());
+    } else {
+        System.out.println("Заявка не найдена. Проверьте id.");
     }
+}
 
     private void findItemsByName() {
         System.out.println("------------ Поиск заявок по имени --------------");

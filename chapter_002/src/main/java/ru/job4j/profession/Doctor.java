@@ -7,7 +7,5 @@ class Doctor extends Profession {
 
     public String diagnose;
 
-    public Diagnose diagnose() {
-        return diagnose;
-    }
+
 }
