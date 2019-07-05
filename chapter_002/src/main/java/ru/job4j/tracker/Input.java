@@ -3,5 +3,5 @@ import java.util.*;
 
 public interface Input {
     String ask(String question);
-    int ask(String question, List<Integer> range);
+    int ask(String question, int[] range);
  }
