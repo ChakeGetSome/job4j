@@ -1,16 +1,16 @@
 package ru.job4j.tracker;
 
 public class AddItem implements UserAction {
-    private final int ADD;
+    private final int add;
     private String message;
 
-    public AddItem(int ADD, String message) {
-        this.ADD = ADD;
+    public AddItem(int add, String message) {
+        this.add = add;
         this.message = message;
     }
     @Override
     public int key() {
-        return ADD;
+        return add;
     }
 
     @Override

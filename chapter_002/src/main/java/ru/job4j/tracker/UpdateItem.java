@@ -1,23 +1,23 @@
 package ru.job4j.tracker;
 
 public class UpdateItem implements UserAction{
-    private final int UPDATE;
+    private final int update;
     private String message;
 
     public UpdateItem(int UPDATE, String message) {
-        this.UPDATE = UPDATE;
+        this.update = UPDATE;
         this.message = message;
     }
     @Override
     public int key() {
-        return UPDATE;
+        return update;
     }
 
     @Override
     public void execute(Input input, Tracker tracker) {
         System.out.println("------------ Update item --------------");
         String id = input.ask("Please, provide item Id: ");
-        if(tracker.findById(id) != null) {
+        if (tracker.findById(id) != null) {
             String name = input.ask("Please, provide new item's name: ");
             String desc = input.ask("Please, provide new item's description: ");
             Item item = new Item(name, desc, System.currentTimeMillis());

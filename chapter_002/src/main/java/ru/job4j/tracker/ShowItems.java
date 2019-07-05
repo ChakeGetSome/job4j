@@ -1,16 +1,16 @@
 package ru.job4j.tracker;
 
 public class ShowItems implements UserAction{
-    private final int SHOW;
+    private final int show;
     private String message;
 
-    public ShowItems(int SHOW, String message) {
-        this.SHOW = SHOW;
+    public ShowItems(int show, String message) {
+        this.show = show;
         this.message = message;
     }
     @Override
     public int key() {
-        return SHOW;
+        return show;
     }
 
     @Override

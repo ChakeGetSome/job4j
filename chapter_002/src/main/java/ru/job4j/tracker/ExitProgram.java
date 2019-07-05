@@ -1,16 +1,16 @@
 package ru.job4j.tracker;
 
 public class ExitProgram implements UserAction{
-    private final int EXIT;
+    private final int exit;
     private String message;
 
     public ExitProgram(int EXIT, String message) {
-        this.EXIT = EXIT;
+        this.exit = EXIT;
         this.message = message;
     }
     @Override
     public int key() {
-        return EXIT;
+        return exit;
     }
 
     @Override

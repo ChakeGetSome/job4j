@@ -20,6 +20,8 @@ import java.util.*;
          }
          if (exist) {
              return key;
-         } else {throw new MenuOutException("Number out of menu range");}
+         } else {
+             throw new MenuOutException("Number out of menu range");
+         }
      }
  }
