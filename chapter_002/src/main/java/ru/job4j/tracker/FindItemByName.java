@@ -1,16 +1,9 @@
 package ru.job4j.tracker;
 
-public class FindItemByName implements UserAction{
-    private final int findByName;
-    private String message;
+public class FindItemByName extends BaseAction {
 
     public FindItemByName(int findByName, String message) {
-        this.findByName = findByName;
-        this.message = message;
-    }
-    @Override
-    public int key() {
-        return findByName;
+        super(findByName, message);
     }
 
     @Override
@@ -26,10 +19,5 @@ public class FindItemByName implements UserAction{
         } else {
             System.out.println("------------ There are no items with such name --------------");
         }
-    }
-
-    @Override
-    public String info() {
-        return message;
     }
 }

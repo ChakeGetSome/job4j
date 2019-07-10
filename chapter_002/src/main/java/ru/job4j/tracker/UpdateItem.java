@@ -1,16 +1,9 @@
 package ru.job4j.tracker;
 
-public class UpdateItem implements UserAction{
-    private final int update;
-    private String message;
+public class UpdateItem extends BaseAction {
 
-    public UpdateItem(int UPDATE, String message) {
-        this.update = UPDATE;
-        this.message = message;
-    }
-    @Override
-    public int key() {
-        return update;
+    public UpdateItem(int update, String message) {
+        super(update, message);
     }
 
     @Override
@@ -26,10 +19,5 @@ public class UpdateItem implements UserAction{
         } else {
             System.out.println("------------ There is no item with such id --------------");
         }
-    }
-
-    @Override
-    public String info() {
-        return message;
     }
 }

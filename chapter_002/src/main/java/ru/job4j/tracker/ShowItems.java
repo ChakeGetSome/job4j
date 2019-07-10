@@ -1,16 +1,9 @@
 package ru.job4j.tracker;
 
-public class ShowItems implements UserAction{
-    private final int show;
-    private String message;
+public class ShowItems extends BaseAction {
 
     public ShowItems(int show, String message) {
-        this.show = show;
-        this.message = message;
-    }
-    @Override
-    public int key() {
-        return show;
+        super(show, message);
     }
 
     @Override
@@ -24,10 +17,5 @@ public class ShowItems implements UserAction{
         } else {
             System.out.println("------------ There are no items --------------");
         }
-    }
-
-    @Override
-    public String info() {
-        return message;
     }
 }

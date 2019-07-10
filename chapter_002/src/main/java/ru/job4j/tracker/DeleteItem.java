@@ -1,16 +1,9 @@
 package ru.job4j.tracker;
 
-public class DeleteItem implements UserAction{
-    private final int delete;
-    private String message;
+public class DeleteItem extends BaseAction {
 
     public DeleteItem(int delete, String message) {
-        this.delete = delete;
-        this.message = message;
-    }
-    @Override
-    public int key() {
-        return delete;
+        super(delete, message);
     }
 
     @Override
@@ -22,10 +15,5 @@ public class DeleteItem implements UserAction{
         } else {
             System.out.println("------------ There is no item with such id --------------");
         }
-    }
-
-    @Override
-    public String info() {
-        return message;
     }
 }
